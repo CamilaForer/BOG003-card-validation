@@ -90,13 +90,17 @@ footer button{
    font-size:35px;
    border: none;
    color: white;
-
+   position: relative;
+   top: -55px;
+   right:30px;
 }
 .contenedorFin p{
+   font-size: 18px;
    text-align: left;
    color: white;
-   margin: 10px;
-   
+   position: relative;
+   top:25px ;
+   left: 25px;
 }
 
 .bannerFacturacion{
