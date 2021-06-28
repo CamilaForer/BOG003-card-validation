@@ -102,7 +102,7 @@ footer button{
    top:25px ;
    left: 25px;
 }
-
+/* Pagina validación */
 .bannerFacturacion{
    height: 300px;
    background: url("/img/Banner6.jpg")no-repeat;
@@ -210,6 +210,7 @@ input{
     height:22px;
     width: 100%;
     border: 1px solid #e9dcd6 ;
+    text-transform: uppercase;
 }
 .selec{
     display: grid;
