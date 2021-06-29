@@ -102,6 +102,7 @@ footer button{
    top:25px ;
    left: 25px;
 }
+
 /* Pagina validación */
 .bannerFacturacion{
    height: 300px;
@@ -239,5 +240,6 @@ select{
     padding: 15px;
 }
 .validar button:hover{
-    background-color:#EFBE9A ;
+    background-color: #EFBE9A ;
 }
+
