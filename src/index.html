@@ -8,10 +8,12 @@
    </head>
    <body >
       <!-- Primera pagina -->
+      <section id="principalPage">
       <header>
          <div class="contenedorIcono"> 
             <button><i class="fab fa-facebook-square"></i></button> 
             <button><i class="fab fa-instagram"></i></button>
+            <input type="text" id="search" class="search">
          </div>
          <div class="banner"> 
          </div>
@@ -20,12 +22,12 @@
             <a href="#"> Galletas </a>
             <a href="#"> Postres </a>
             <a href="#"> Panes y hojaldres </a>
-            <a href="#"><i class="fas fa-cart-arrow-down"></i>Carrito de compras </a>
+            <a href="#" id="botonCarrito"><i class="fas fa-cart-arrow-down" ></i>Carrito de compras </a>
          </nav>
       </header>
       <br>
       <main>
-         <section>
+         
             <h1>Nuevos productos</h1>
             <div class="container">
                <div class="card">
@@ -41,7 +43,7 @@
                   <h2> Hojaldre relleno de carne</h2>
                </div>
             </div>
-         </section>
+       
       </main>
       <footer>
          <div class="contenedorFin">
@@ -52,10 +54,11 @@
             <button><i class="fab fa-instagram"></i></button>
          </div>
       </footer>
+   </section>
 
     <!-- Pagina validación tarjeta -->
    
-      <section class="Validacion">
+      <section id="validationPage" class="hide">
       <header>
          <div class="contenedorIcono"> 
             <button><i class="fab fa-facebook-square"></i></button> 
@@ -75,14 +78,14 @@
       <br>
       <section>
       <main>
-        <!-- Formulario de datos -->
+        <!-- Formulario de datos --> 
          <div class="cont">
-            <div class="Form">
+            <div class="Form" id="formulario-tarjeta">
                <h2>Nueva tarjeta</h2>
-               <label>Número de la tarjeta</label>
-               <input type="text" maxlength="16">
-               <label>Nombre impreso</label>
-               <input type="text">
+               <label for="inputNumero">Número de la tarjeta</label>
+               <input type="text" id="inputNumero" maxlength="16" autocomplete="off">
+               <label for="inputNombre">Nombre impreso</label>
+               <input type="text" id="inputNombre" autocomplete="off">
                <div class="FormGroup">
                  <div class="Expira">
                <label>Expira</label>
@@ -144,7 +147,6 @@
                         </div>
                      </div>
                   </div>
-                </section>
                <div class="validar">
                   <button type="submit">Validar</button>
                 </div>
@@ -160,7 +162,7 @@
       <button><i class="fab fa-instagram"></i></button>
       </div>
       </footer>
-      
+   </section>  
       <script src="index.js" type="module"></script>
    </body>
 </html>
