@@ -34,7 +34,7 @@ text-align: right;
 
 .banner{
 height: 300px;
-background: url("/img/Banner1.jpg")no-repeat;
+background: url("./img/Banner1.jpg")no-repeat;
 background-size:cover ;
 background-position-x: center;
 background-position-y: center;
@@ -120,7 +120,7 @@ footer button{
 /* Pagina validación */
 .bannerFacturacion{
    height: 300px;
-   background: url("/img/Banner6.jpg")no-repeat;
+   background: url("./img/Banner6.jpg")no-repeat;
    background-size:cover ;
    background-position-x: center;
    background-position-y: center;

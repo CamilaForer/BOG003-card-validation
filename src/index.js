@@ -13,7 +13,12 @@ function cambioPagina(){
     principal.classList.add("hide")
 }
 
-// Llenado tarjeta
+// Llenado formulario
+// Eliminar espacios en blanco
+
+let numb= document.querySelector("#inputNumero")
+numb.addEventListener("keyup", noEspacios)
+
 
 
 
