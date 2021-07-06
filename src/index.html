@@ -23,7 +23,7 @@
             <a href="#"> Galletas </a>
             <a href="#"> Postres </a>
             <a href="#"> Panes y hojaldres </a>
-            <a href="#" id="botonCarrito"><i class="fas fa-cart-arrow-down" ></i>Carrito de compras </a>
+            <a href="#" id="btnCar"><i class="fas fa-cart-arrow-down" ></i>Carrito de compras </a>
          </nav>
       </header>
       <br>
@@ -65,6 +65,7 @@
          <div class="contenedorIcono"> 
             <button><i class="fab fa-facebook-square"></i></button> 
             <button><i class="fab fa-instagram"></i></button>
+            <input type="text" id="search" class="search">
          </div>
          <div class="bannerFacturacion">
             <p>FACTURACIÓN</p>
@@ -84,10 +85,10 @@
          <div class="cont">
             <div class="Form" id="formulario-tarjeta">
                <h2>Nueva tarjeta</h2>
-               <label for="inputNumero">Número de la tarjeta</label>
-               <input type="text" id="inputNumero" maxlength="16" autocomplete="off">
-               <label for="inputNombre">Nombre impreso</label>
-               <input type="text" id="inputNombre" autocomplete="off">
+               <label for="inputNumber">Número de la tarjeta</label>
+               <input type="text" id="inputNumber" maxlength="19" autocomplete="off">
+               <label for="inputName">Nombre impreso</label>
+               <input type="text" id="inputName" autocomplete="off">
                <div class="FormGroup">
                  <div class="Expira">
                <label>Expira</label>
@@ -129,8 +130,8 @@
             <!-- Tarjeta -->
             <div class="contenedorTarjeta">
                <section class="tarjeta" id="tarjeta">
-                  <div class="logo-marca">
-                     <img src="./img/Logo/visa.png" alt="Tarjeta">
+                  <div class="logo-marca" id="logo">
+                     <!-- <img src="./img/Logo/visa.png" alt="Tarjeta"> -->
                   </div>
                   <img src="./img/Logo/Chip.png" class="chip" alt="">
                   <div class="Datos">
