@@ -64,12 +64,31 @@ function inputNam(a){
     inputName.value=nameValue.replace(/[0-9]/g,"")
 // Plasmar el formulario en la tarjeta
     cardName.textContent=nameValue;
-
     if(nameValue ==""){
         cardName.textContent="Your card name here";
-
     }
+}
+// Plasmar los select en la tarjeta
+const expMonth= document.querySelector(".mes")
+const expYear= document.querySelector(".year")
+// Select mes
+selectMes.addEventListener("change", selectMonth)
+function selectMonth(b){
+    expMonth.textContent=b.target.value;
+}
 
+// Select Año
+selectYear.addEventListener("change", selectYea)
+function selectYea(c){
+    expYear.textContent=c.target.value;
+}
+// input CVV
+const inputCVV= document.querySelector("#inputCVV")
+inputCVV.addEventListener("keyup", inputCv)
+
+function inputCv(c){
+    let cvvValue=c.target.value;
+    inputCVV.value=cvvValue.replace(/([A-Za-z])/g,"")
 
 }
 
