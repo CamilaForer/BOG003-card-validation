@@ -72,13 +72,13 @@ function inputNam(a){
 const expMonth= document.querySelector(".mes")
 const expYear= document.querySelector(".year")
 // Select mes
-selectMes.addEventListener("change", selectMonth)
+expMonth.selectMes.addEventListener("change", selectMonth)
 function selectMonth(b){
     expMonth.textContent=b.target.value;
 }
 
 // Select Año
-selectYear.addEventListener("change", selectYea)
+expYear.selectYear.addEventListener("change", selectYea)
 function selectYea(c){
     expYear.textContent=c.target.value;
 }
@@ -89,7 +89,6 @@ inputCVV.addEventListener("keyup", inputCv)
 function inputCv(c){
     let cvvValue=c.target.value;
     inputCVV.value=cvvValue.replace(/([A-Za-z])/g,"")
-
 }
 
 
