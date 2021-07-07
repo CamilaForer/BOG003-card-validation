@@ -1,13 +1,18 @@
-// import validator from './validator.js';
+import validator from './validator.js';
+const btnValidation= document.querySelector("#validation")
+btnValidation.addEventListener("click", cardValidation)
 
-// console.log(validator);
+function cardValidation(){
+    const numberValue=document.querySelector("#inputNumber").value
+    validator.isValid(numberValue)
+
+}
 
 // Cambio de pagina
 const btn= document.querySelector("#btnCar")
 const car=document.querySelector("#validationPage")
 const principal=document.querySelector("#principalPage")
 btn.addEventListener("click", changePage)
-// Eliminar espacios en blanco, letras,separar en grupos de cuatro y eliminar ultimo espacio en blanco
 
 
 // Cambio de pagina
