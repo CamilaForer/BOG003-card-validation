@@ -20,6 +20,7 @@ const principal=document.querySelector("#principalPage")
 btn.addEventListener("click", changePage)
 
 
+
 // Cambio de pagina
 function changePage(){
     car.classList.remove("hide") 
