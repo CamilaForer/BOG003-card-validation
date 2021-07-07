@@ -1,13 +1,19 @@
-// import validator from './validator.js';
+import validator from './validator.js';
+const btnValidation= document.querySelector("#validation")
+btnValidation.addEventListener("click", cardValidation)
 
-// console.log(validator);
+function cardValidation(){
+    const numberValue=document.querySelector("#inputNumber").value
+    validator.isValid(numberValue)
+
+}
 
 // Cambio de pagina
 const btn= document.querySelector("#btnCar")
 const car=document.querySelector("#validationPage")
 const principal=document.querySelector("#principalPage")
 btn.addEventListener("click", changePage)
-// Eliminar espacios en blanco, letras,separar en grupos de cuatro y eliminar ultimo espacio en blanco
+
 
 
 // Cambio de pagina
@@ -72,13 +78,13 @@ function inputNam(a){
 const expMonth= document.querySelector(".mes")
 const expYear= document.querySelector(".year")
 // Select mes
-expMonth.selectMes.addEventListener("change", selectMonth)
+selectMes.addEventListener("change", selectMonth)
 function selectMonth(b){
     expMonth.textContent=b.target.value;
 }
 
 // Select Año
-expYear.selectYear.addEventListener("change", selectYea)
+selectYear.addEventListener("change", selectYea)
 function selectYea(c){
     expYear.textContent=c.target.value;
 }
@@ -90,6 +96,7 @@ function inputCv(c){
     let cvvValue=c.target.value;
     inputCVV.value=cvvValue.replace(/([A-Za-z])/g,"")
 }
+
 
 
 
