@@ -4,7 +4,12 @@ btnValidation.addEventListener("click", cardValidation)
 
 function cardValidation(){
     const numberValue=document.querySelector("#inputNumber").value
-    validator.isValid(numberValue)
+    if(validator.isValid(numberValue)){
+        alert("Tarjeta Válida")
+    }
+    else{
+        alert("Tarjeta no válida")
+    }
 
 }
 
