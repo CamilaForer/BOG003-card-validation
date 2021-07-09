@@ -25,7 +25,9 @@ btn.addEventListener("click", changePage)
 function changePage(){
     car.classList.remove("hide") 
     principal.classList.add("hide")
+    
 }
+
 
 // Llenado formulario
 // Eliminar espacios en blanco, letras,separar en grupos de cuatro y eliminar ultimo espacio en blanco
