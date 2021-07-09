@@ -1,9 +1,15 @@
 
 
-#H1 Validación de tarjeta de crédito
+#  Validación de tarjeta de crédito
 -
 Este proyecto busca validar las tarjetas de crédito de los clientes de la pasteleria "Bakery" cuando quieran hacer sus comprar por medio de este pago electronico, solo con insertar el número de su tarjeta y dar click en validad se podra verificar y es valida o no para continuar con la compra. 
 
+## Interfaz de usuario
+-
+Para la interfaz se busco la utilización de una paleta de colores agradable a la vista, además de una facil navegación
+Para la realización del prototipo final se utilizo la herramienta Figma
+
+![Imagen final pagina principal](./img/Mockups/p Pantalla principal.JPG)
 
 ## 1. Preámbulo
 
