@@ -25,7 +25,6 @@ btn.addEventListener("click", changePage)
 function changePage(){
     car.classList.remove("hide") 
     principal.classList.add("hide")
-    
 }
 
 

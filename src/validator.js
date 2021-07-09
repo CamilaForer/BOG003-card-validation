@@ -25,7 +25,7 @@ const validator = {
           }
 
           Sum = parseInt(Sum) + parseInt(reverseNumber[index])
-          console.log("TSuma", Sum)
+          
       }
        if(Sum%10==0){
            return true
