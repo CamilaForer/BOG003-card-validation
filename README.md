@@ -46,7 +46,7 @@ Se sugirio el uso de fuentes fácilmente legibles y una página principal que ll
 ![Imagen final página inválida](src/img/Mockups/Invalida.JPG)
 
 ## Testing
-Se realizo testing unitario del proyecto para verificar tu total funcionalidad
+Se realizo testing unitario del proyecto para verificar su total funcionalidad
 
 ![Test](src/img/Test.JPG)
 
