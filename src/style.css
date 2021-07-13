@@ -18,10 +18,10 @@ text-align: right;
 
 
 }
-#logo1{
+.logo1{
     max-width: 120px;
     position: relative;
-    left: -1050px;
+    left: -1250px;
     cursor: pointer;
  }
 .search{
@@ -56,7 +56,7 @@ opacity:70% ;
 
 header nav{
 text-align: center;
-font-size:32px; 
+font-size:35px; 
 width:100%;
 background-color:rgba(251, 210, 180, 1);
 }
@@ -64,7 +64,7 @@ background-color:rgba(251, 210, 180, 1);
 header a{
 color:black;
 display: inline-block;
-padding: 10px 17px ;
+padding: 15px 17px ;
 }
 
 header nav a:hover {
@@ -72,7 +72,7 @@ background:rgba(240, 184, 143, 1) ;
 }
 
 section h1 {
-font-size: 72px;
+font-size: 75px;
 margin:10px ;
 padding:20px;
 text-align:center;
@@ -81,7 +81,7 @@ text-align:center;
 
 .container{
 width: 100%;
-max-width:1500px ;
+max-width:1600px ;
 height: 430px;
 display:flex;
 flex-wrap: wrap;
@@ -89,12 +89,12 @@ justify-content: center;
 margin: auto;
 }
 .container .card{
-    width: 346px;
+    width: 366px;
     height: 328px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
-    margin: 40px;
+    margin: 50px;
     text-align: center;
     transition:all 0.25s;
 }      
@@ -104,16 +104,18 @@ margin: auto;
     cursor: pointer;
 }
 .container .card img{
-   width: 346px;
+   width: 366px;
    height: 228px;
 }
 .contenedorFin{
  
    background-color: black;
    text-align: right;
-   max-height: 115px;
+   max-height: 215px;
+   padding-top: 10px ;
+   padding-bottom:10px;
+   margin-top: 80px;
    
- 
 }
 
 footer button{
@@ -124,11 +126,11 @@ footer button{
    color: white;
    position: relative;
    top: -65px;
-   right:30px;
+   right:170px;
 }
 .contenedorFin p{
     font-family:'Roboto', sans-serif;
-   font-size: 15px;
+   font-size: 17px;
    text-align: left;
    color: white;
    position: relative;
@@ -165,8 +167,8 @@ footer button{
 }
 
 .tarjeta{
-    max-width: 350px;
-    max-height:250px ;
+    max-width: 450px;
+    max-height:350px ;
     position: relative;
     color: white;
     padding: 20px;
@@ -189,6 +191,7 @@ footer button{
     height:100%;
     object-fit:cover;
     max-width: 80px; 
+    
 
 }
 .chip{
@@ -199,7 +202,7 @@ footer button{
 }
 
 .grupo .label{
-    font-size: 16px;
+    font-size: 20px;
     color: #424446;
     margin-bottom: 5px;
     margin-top: 0px;
@@ -208,7 +211,7 @@ footer button{
 .tarjeta .grupo .numero,
 .tarjeta .grupo .nombre,
 .tarjeta .grupo .expiracion{
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
 
 }
@@ -224,10 +227,10 @@ footer button{
 }
 .Form h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 55px;
 }
 .Form{
-    font-size: 22px;
+    font-size: 26px;
     display: grid;
     height:fit-content;
     justify-content: center;
@@ -268,7 +271,7 @@ select{
     border-color: #FFCCA8;
     margin:0px auto ;
     font-family:'Courgette', cursive;
-    font-size: 20px;
+    font-size: 23px;
     cursor: pointer;
     padding:2px 20px ;
 }
@@ -282,7 +285,7 @@ select{
 
 /* Pagina de confirmar */
 .confirm p{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 40px;
 }
@@ -297,7 +300,7 @@ select{
     border-color: #FFCCA8;
     margin:0px auto ;
     font-family:'Courgette', cursive;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     padding:2px 20px ;
 }

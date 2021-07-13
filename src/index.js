@@ -26,7 +26,7 @@ function cardValidation(){
 }
 
 // Cambio de pagina
-const btn= document.querySelector("#btnCar")
+const btn= document.querySelector(".btnCar")
 const car=document.querySelector("#validationPage")
 const principal=document.querySelector("#principalPage")
 btn.addEventListener("click", changePage)
@@ -72,7 +72,7 @@ function noSpace(n){
     .trim();
 
     // Plasmar el formulario en la tarjeta
-    cardNumber.textContent= validator.maskify(numberValue);
+    cardNumber.textContent= validator.maskify(numberValue).replace(/([0-9]{4})/g, "$1 ");
     if(numberValue ==""){
     // Cuando no hay nada en el input en la tarjeta se cambia el contenido
         cardNumber.textContent="#### #### #### ####";
@@ -109,6 +109,8 @@ function inputNam(a){
 // Plasmar los select en la tarjeta
 const expMonth= document.querySelector(".mes")
 const expYear= document.querySelector(".year")
+const selectMes=document.querySelector("#selectMes")
+const selectYear=document.querySelector("#selectYear")
 // Select mes
 selectMes.addEventListener("change", selectMonth)
 function selectMonth(b){
