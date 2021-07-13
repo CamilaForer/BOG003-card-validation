@@ -1,14 +1,26 @@
 import validator from './validator.js';
 const btnValidation= document.querySelector("#validation")
+const invalid=document.querySelector("#ConfirmInvalid")
+const Valid=document.querySelector("#Confirm")
+const btnInvalid=document.querySelector(".btnBack")
+const btnPrincipal=document.querySelector(".btnInvalidPrincipal")
+const BackPrincipal=document.querySelector(".BackPrincipal")
 btnValidation.addEventListener("click", cardValidation)
+btnInvalid.addEventListener("click", backPage)
+btnPrincipal.addEventListener("click", backPage)
+BackPrincipal.addEventListener("click", backPage)
 
 function cardValidation(){
     const numberValue=document.querySelector("#inputNumber").value
     if(validator.isValid(numberValue)){
-        alert("Tarjeta Válida")
+       Valid.classList.remove("hide")
+       Valid.classList.add("show")
+       car.classList.add("hide")  
     }
     else{
-        alert("Tarjeta no válida")
+        invalid.classList.remove("hide")
+        car.classList.add("hide")
+        principal.classList.add("hide")
     }
 
 }
@@ -19,14 +31,28 @@ const car=document.querySelector("#validationPage")
 const principal=document.querySelector("#principalPage")
 btn.addEventListener("click", changePage)
 
-
-
 // Cambio de pagina
 function changePage(){
     car.classList.remove("hide") 
     principal.classList.add("hide")
 }
-
+// Volver a pagina d validación y volver a pagina principal
+function backPage(a){
+    let back=a.target.className
+    if(back=="btnBack"){
+        invalid.classList.add("hide")
+        car.classList.remove("hide")
+    }
+    else if(back=="btnInvalidPrincipal"){
+        invalid.classList.add("hide")
+        principal.classList.remove("hide")
+    }
+    else if(back=="BackPrincipal"){
+        Valid.classList.add("hide")
+        Valid.classList.remove("show")
+        principal.classList.remove("hide")
+    }
+}
 
 // Llenado formulario
 // Eliminar espacios en blanco, letras,separar en grupos de cuatro y eliminar ultimo espacio en blanco
@@ -44,22 +70,22 @@ function noSpace(n){
     .replace(/([A-Za-z])/g,"")
     .replace(/([0-9]{4})/g, "$1 ")
     .trim();
-    // Plasmar el formulario en la tarjeta
-    cardNumber.textContent= numberValue;
 
+    // Plasmar el formulario en la tarjeta
+    cardNumber.textContent= validator.maskify(numberValue);
     if(numberValue ==""){
     // Cuando no hay nada en el input en la tarjeta se cambia el contenido
         cardNumber.textContent="#### #### #### ####";
     // Borra el logo cuando se borran o no hay elementos en el input
         logo.innerHTML="";
     }
-// Cuando la primera posicion lleve un 4 se mostrara el logo de Visa
+// Cuando inicie con un 4 se mostrara el logo de Visa
     if(numberValue[0] == 4){
         logo.innerHTML="";
         const image=document.createElement("img");
         image.src="img/Logo/visa.png";
         logo.appendChild(image);
-// Cuando la primera posicion lleve un 5 se mostrara el logo de MasterCard
+// Cuando inicie con un 5 se mostrara el logo de MasterCard
     } else if(numberValue[0] == 5){
         logo.innerHTML="";
         const image=document.createElement("img");

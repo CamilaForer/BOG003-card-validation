@@ -304,3 +304,6 @@ select{
 .btns button:hover{
     background-color: #EFBE9A ;
 }
+.valid{
+    text-align: center;
+}

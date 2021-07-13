@@ -34,6 +34,18 @@ const validator = {
        else{
            return false
        }
+  },
+  maskify:(creditCardNumber)=>{
+    let creditWithoutSpace=creditCardNumber.replace(/\s/g,"")
+    if(creditCardNumber.length>4){
+      creditWithoutSpace=(creditWithoutSpace.replace(/./g,"#").substr(0,creditWithoutSpace.length-4))+creditWithoutSpace.substr(-4)
+      return creditWithoutSpace.replace(/([#]{4})/g, "$1 ")
+    }
+    else{
+      return creditCardNumber
+  
+
+    }
   }
 };
 
