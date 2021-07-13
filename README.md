@@ -9,7 +9,7 @@ Este proyecto busca validar las tarjetas de crédito de los clientes de la paste
 Para la interfaz se busco la utilización de una paleta de colores agradable a la vista, además de una facil navegación
 Para la realización del prototipo final se utilizo la herramienta Figma
 
-![Imagen final pagina principal](src/img/Mockups/p_Pantalla_principal.JPG)
+![Imagen final pagina principal](src/img/Mockups/pPantallaprincipal.JPG)
 
 ## 1. Preámbulo
 
