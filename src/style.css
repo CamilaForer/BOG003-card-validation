@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-*{
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0;
 }
 body {
   font-family: "Courgette", cursive;
@@ -67,9 +66,9 @@ header a {
   padding: 15px 17px;
   text-decoration: none;
   border-radius: 10px;
-  }
-nav{
-   align-items: center;
+}
+nav {
+  align-items: center;
 }
 
 header nav a:hover {
@@ -111,32 +110,39 @@ section h1 {
   height: 228px;
 }
 .contenedorFin {
+  display: flex;
+  flex-direction: row;
   background-color: black;
-  text-align: right;
-  max-height: 215px;
+  max-height: 210px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 80px;
 }
-
-footer button {
+.contacto {
+  width: 50%;
+  justify-content: center;
+}
+.social-media {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.social-media button {
   background-color: black;
   cursor: pointer;
   font-size: 35px;
   border: none;
   color: white;
-  position: relative;
-  top: -65px;
-  right: 170px;
+  padding: 1%;
 }
 .contenedorFin p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   text-align: left;
   color: white;
-  position: relative;
   top: 10px;
   left: 25px;
+  padding: 10px 0px 5px 30px;
 }
 
 /* Pagina validación */
