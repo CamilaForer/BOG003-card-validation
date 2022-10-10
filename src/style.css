@@ -21,18 +21,17 @@ body {
 }
 .logo1 {
   width: 70%;
-  cursor: pointer;
   text-align: left;
   padding-left: 30px;
 }
 .logo1 img {
   width: 10%;
+  cursor: pointer;
 }
 .header-icons {
   display: flex;
   flex-direction: row;
   width: 6%;
-  cursor: pointer;
   font-size: 30px;
   border: none;
 }
@@ -42,6 +41,9 @@ body {
   font-size: 30px;
   background-color: transparent;
 }
+svg{
+  cursor: pointer;
+}
 .search{
   display: flex;
   flex-direction:column;
@@ -50,10 +52,18 @@ body {
   
 }
 .search input {
-  size: 45px;
+  font-size: medium;
   width: 90%;
   background-color: #fff8f3;
   border-radius: 13px;
+  padding: 5px;
+  color: black;
+}
+input::placeholder {
+  font-weight: bold;
+  opacity: .2;
+  color: black;
+  text-transform: none;
 }
 .banner {
   height: 300px;
@@ -140,7 +150,6 @@ section h1 {
 }
 .social-media button {
   background-color: black;
-  cursor: pointer;
   font-size: 35px;
   border: none;
   color: white;
@@ -199,6 +208,7 @@ section h1 {
   box-shadow: 0 10px 10px rgba(65, 80, 97, 0.3);
   background: url("./img/tarjeta1.jpg");
   background-size: cover;
+  margin-bottom: 5%;
 }
 
 .logo-marca {
@@ -254,6 +264,8 @@ section h1 {
   grid-row-gap: 10px;
   border-right: black solid 2px;
   margin: auto 0;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .FormGroup {
   display: grid;
