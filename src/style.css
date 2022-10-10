@@ -14,36 +14,47 @@ body {
   display: block;
 }
 .contenedorIcono {
+  display: flex;
+  flex-direction: row;
   background-color: #ffecde;
-  text-align: right;
+  justify-content: center;
 }
 .logo1 {
-  max-width: 120px;
-  position: relative;
-  left: -1250px;
+  width: 70%;
   cursor: pointer;
+  text-align: left;
+  padding-left: 30px;
 }
-.search {
-  size: 40px;
-  position: relative;
-  max-width: 15%;
-  top: -45px;
-  background-color: #fff8f3;
-  left: -45px;
-  border-radius: 13px;
+.logo1 img {
+  width: 20%;
 }
-
-header button {
-  background-color: #ffecde;
+.header-icons {
+  display: flex;
+  flex-direction: row;
+  width: 6%;
   cursor: pointer;
   font-size: 30px;
   border: none;
-  text-align: right;
-  position: relative;
-  top: -40px;
-  left: -55px;
 }
-
+.header-icons button{
+  width: 30px;
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+}
+.search{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width: 30%;
+  
+}
+.search input {
+  size: 45px;
+  width: 90%;
+  background-color: #fff8f3;
+  border-radius: 13px;
+}
 .banner {
   height: 300px;
   background: url("./img/Banner1.jpg") no-repeat;
