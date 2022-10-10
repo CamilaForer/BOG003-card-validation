@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>itzabakery</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <meta
       name="viewport"
       content="user-scalable=no, width=device-width, initial-scale=1"
@@ -19,7 +19,7 @@
       <header>
         <div class="contenedorIcono">
          <div class="logo1" >
-          <img src="img/bakery.png" alt="Logo-Bakery" />
+          <img src="src/img/bakery.png" alt="Logo-Bakery" />
          </div>
          <div class="header-icons">
           <button><i class="fab fa-facebook-square"></i></button>
@@ -32,7 +32,7 @@
         </div>
         <div class="banner"></div>
         <!-- Barra de navegación -->
-        <nav>
+        <nav class="navegacion">
           <a href="#"> Tortas y ponques </a>
           <a href="#"> Galletas </a>
           <a href="#"> Postres </a>
@@ -47,15 +47,15 @@
         <h1>Nuevos productos</h1>
         <div class="container">
           <div class="card">
-            <img src="./img/1.jpg" alt="Pastel de chocolate con fresas" />
+            <img src="src/img/1.jpg" alt="Pastel de chocolate con fresas" />
             <h2>Pastel de chocolate con fresas</h2>
           </div>
           <div class="card">
-            <img src="./img/2.jpg" alt="Galletas con chips de chocolate" />
+            <img src="src/img/2.jpg" alt="Galletas con chips de chocolate" />
             <h2>Galletas con chips de chocolate</h2>
           </div>
           <div class="card">
-            <img src="./img/3.jpg" alt="Hojaldre relleno de carne" />
+            <img src="src/img/3.jpg" alt="Hojaldre relleno de carne" />
             <h2>Hojaldre relleno de carne</h2>
           </div>
         </div>
@@ -78,21 +78,27 @@
     <section id="validationPage" class="hide">
       <header>
         <div class="contenedorIcono">
-          <img src="./img/bakery.png" class="logo1" alt="" />
+         <div class="logo1" >
+          <img src="src/img/bakery.png" alt="Logo-Bakery" />
+         </div>
+         <div class="header-icons">
           <button><i class="fab fa-facebook-square"></i></button>
           <button><i class="fab fa-instagram"></i></button>
-          <input type="text" class="search" />
+         </div>
+         <div class="search">
+          <input type="text"/>
+         </div>
+         </div>
         </div>
-        <div class="bannerFacturacion">
-          <p>FACTURACIÓN</p>
-        </div>
-        <nav>
+        <div class="banner"></div>
+        <!-- Barra de navegación -->
+        <nav class="navegacion">
           <a href="#"> Tortas y ponques </a>
           <a href="#"> Galletas </a>
           <a href="#"> Postres </a>
           <a href="#"> Panes y hojaldres </a>
-          <a href="#">
-            <i class="fas fa-cart-arrow-down"></i>Carrito de compras
+          <a href="#" class="btnCar"
+            ><i class="fas fa-cart-arrow-down"></i>Carrito de compras
           </a>
         </nav>
       </header>
@@ -160,7 +166,7 @@
               <div class="logo-marca" id="logo">
                 <!-- <img src="./img/Logo/visa.png" alt="Tarjeta"> -->
               </div>
-              <img src="./img/Logo/Chip.png" class="chip" alt="" />
+              <img src="src/img/Logo/Chip.png" class="chip" alt="" />
               <div class="Datos">
                 <div class="grupo">
                   <p class="label">Número Tarjeta</p>
@@ -205,16 +211,21 @@
     <section id="ConfirmInvalid" class="hide">
       <header>
         <div class="contenedorIcono">
-          <img src="./img/bakery.png" class="logo1" alt="" />
+         <div class="logo1" >
+          <img src="src/img/bakery.png" alt="Logo-Bakery" />
+         </div>
+         <div class="header-icons">
           <button><i class="fab fa-facebook-square"></i></button>
           <button><i class="fab fa-instagram"></i></button>
-          <input type="text" class="search" />
+         </div>
+         <div class="search">
+          <input type="text"/>
+         </div>
+         </div>
         </div>
-        <div class="bannerFacturacion">
-          <p>FACTURACIÓN</p>
-        </div>
+        <div class="banner"></div>
         <!-- Barra de navegación -->
-        <nav>
+        <nav class="navegacion">
           <a href="#"> Tortas y ponques </a>
           <a href="#"> Galletas </a>
           <a href="#"> Postres </a>
@@ -229,7 +240,7 @@
           <p>Número de tarjeta inválido</p>
         </div>
         <div class="valid">
-          <img src="./img/Invalida.png" />
+          <img src="src/img/Invalida.png" />
         </div>
         <div class="btns">
           <button class="btnBack" type="button">Volver</button>
@@ -256,16 +267,21 @@
     <section id="Confirm" class="hide">
       <header>
         <div class="contenedorIcono">
-          <img src="./img/bakery.png" class="logo1" alt="" />
+         <div class="logo1" >
+          <img src="src/img/bakery.png" alt="Logo-Bakery" />
+         </div>
+         <div class="header-icons">
           <button><i class="fab fa-facebook-square"></i></button>
           <button><i class="fab fa-instagram"></i></button>
-          <input type="text" class="search" />
+         </div>
+         <div class="search">
+          <input type="text"/>
+         </div>
+         </div>
         </div>
-        <div class="bannerFacturacion">
-          <p>FACTURACIÓN</p>
-        </div>
+        <div class="banner"></div>
         <!-- Barra de navegación -->
-        <nav>
+        <nav class="navegacion">
           <a href="#"> Tortas y ponques </a>
           <a href="#"> Galletas </a>
           <a href="#"> Postres </a>
@@ -280,7 +296,7 @@
           <p>Número de tarjeta válido</p>
         </div>
         <div class="valid">
-          <img src="./img/Valida.png" />
+          <img src="src/img/Valida.png" />
         </div>
         <div class="btns">
           <button class="BackPrincipal" type="button">Pagina principal</button>
@@ -301,6 +317,6 @@
          </div>
        </footer>
     </section>
-    <script src="index.js" type="module"></script>
+    <script src="src/index.js" type="module"></script>
   </body>
 </html>

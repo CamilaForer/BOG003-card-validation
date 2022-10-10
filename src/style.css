@@ -78,8 +78,8 @@ header a {
   text-decoration: none;
   border-radius: 10px;
 }
-nav {
-  align-items: center;
+.navegacion{
+  justify-content: center;
 }
 
 header nav a:hover {
@@ -240,6 +240,7 @@ section h1 {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   margin: 0 auto;
+  padding: 5% 0% 5% 0%;
 }
 .Form h2 {
   text-align: center;
